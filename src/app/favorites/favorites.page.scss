@@ -1,0 +1,52 @@
+.wellcome-card {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    font-size: small;
+}
+
+.wellcome-card img{
+    max-width: 10vw;
+    max-height: 10vh;
+    overflow: hidden;
+}
+
+.section-01 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #c4c4c4;
+    text-align: left;
+    padding: 5px;
+}
+
+.section-01 img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+#txt-01 {
+    padding: 10px;
+    align-content: center;
+    color: #000000;
+    font-size: larger;
+}
+
+.section-02 {
+    display: flex;
+    justify-content: space-evenly;;
+    background-color: #c4c4c4;
+    text-align: left;
+    padding: 5px;
+}
+
+.section-02 img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+#txt-02 {
+    padding: 10px;
+    align-content: center;
+    color: #000000;
+    font-size: larger;
+}
