@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Buscar Repúblicas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-card class="welcome-card">
+  <img src="../assets/logo hommy.png" alt="logo hommy" />
+</ion-card>
+
+<ion-content>
+  <ion-card><h2>Resultados de busca de repúblicas com valores até R$ 800...</h2></ion-card>
+
+  <ion-card *ngFor="let rep of republicas" color="medium">
+    
+    <img [src] = rep.img />
+    <ion-card-header>{{rep.name}}</ion-card-header>
+
+    <ion-card-content>
+      <ion-icon 
+        size="large" 
+        name="star" 
+        color="warning" 
+        *ngIf="rep.ehSuperhost"> Superhost
+      </ion-icon>
+
+      <h3>{{rep.address}}</h3>
+      <h3>{{rep.description}}</h3>
+      <h3>R$ {{rep.price}} / mês</h3>
+      <h3>{{rep.bedrooms}} camas disponíveis</h3>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

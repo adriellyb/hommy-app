@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
     },
     {
       title: 'Buscar Repúblicas',
-      url: '/folder/Search',
+      url: '/search',
       icon: 'search'
     },
     {
