@@ -9,7 +9,6 @@ export class FavoritesPage implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
+  
 }

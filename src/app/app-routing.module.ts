@@ -22,6 +22,18 @@ const routes: Routes = [
   {
     path: 'search',
     loadChildren: () => import('./search/search.module').then( m => m.SearchPageModule)
+  },
+  {
+    path: 'republic',
+    loadChildren: () => import('./republic/republic.module').then( m => m.RepublicPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'register-rep',
+    loadChildren: () => import('./register-rep/register-rep.module').then( m => m.RegisterRepPageModule)
   }
 ];
 

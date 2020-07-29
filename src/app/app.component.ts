@@ -28,14 +28,9 @@ export class AppComponent implements OnInit {
       icon: 'heart'
     },
     {
-      title: 'Perfil',
-      url: '/folder/Profile',
-      icon: 'person'
-    },
-    {
-      title: 'Mensagens',
-      url: '/folder/Messenge',
-      icon: 'chatbubbles'
+      title: 'Perfil das Repúblicas',
+      url: '/republic',
+      icon: 'home'
     },
   ];
   /*public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];*/

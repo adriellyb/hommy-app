@@ -1,0 +1,39 @@
+.wellcome-card {
+    display: flex;    
+    align-content: center;
+}
+  
+.slogan {
+    font-size: large;
+    text-align: center;
+}
+  
+.wellcome-card img{
+    max-width: 10vw;
+    max-height: 10vh;
+    overflow: hidden;
+}
+
+#row-02 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#row-05 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#row-06 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (min-width: 800px){
+
+    .slogan {
+        font-size: x-large;
+    }
+}

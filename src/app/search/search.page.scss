@@ -1,0 +1,16 @@
+.wellcome-card {
+    display: flex;
+    align-content: center;
+}
+
+.slogan {
+    background-color: #f7f7f7;
+    font-size: large;
+    text-align: center;
+}
+
+.wellcome-card img{
+    max-width: 10vw;
+    max-height: 10vh;
+    overflow: hidden;
+}

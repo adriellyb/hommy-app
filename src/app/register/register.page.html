@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Cadastro Usuário</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-card class="welcome-card">
+  <img src="../assets/logo hommy.png" alt="logo hommy" />
+</ion-card>
+
+<ion-content color="tertiary">
+  <h3 class="title-01">Novo Usuário</h3>
+
+  <div class="form">
+
+    <!-- CRIANDO FORMULARIO-->
+    <form [formGroup]="registerForm" (ngSubmit)="submitForm(registerForm)">
+
+      <ion-list>
+      <ion-radio-group class="status" formControlName="status">
+        <ion-list-header></ion-list-header>
+        <h4 class="title">Tipo de Usuáro</h4>
+        <ion-item>
+          <ion-label>Sou Locador</ion-label>
+          <ion-radio slot="start" value="locador"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Sou Estudante</ion-label>
+          <ion-radio slot="start" value="estudante"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+      <h4 class="title">Informação Pessoal</h4>
+        <ion-item>
+          <ion-label position="floating">Nome Completo</ion-label>
+          <ion-input type="text" formControlName="name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Data de Nascimento</ion-label>
+          <ion-input type="text" formControlName="birth"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Telefone</ion-label>
+          <ion-input type="text" formControlName="phone" [brmasker]="{phone: true}"></ion-input>
+        </ion-item>
+        <h4 class="title">Dados de Acesso</h4>
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="text" formControlName="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input type="password" formControlName="password"></ion-input>
+        </ion-item>
+      </ion-list>
+      <!-- CRIANDO BOTAO CADASTRAR-->
+      <ion-row class="button">
+        <ion-button type="submit" color="danger" shape="round" [disabled]="registerForm.invalid">Cadastrar</ion-button>
+      </ion-row>
+    </form>
+  </div>
+</ion-content>

@@ -1,0 +1,38 @@
+.wellcome-card {
+    display: flex;
+    align-content: center;
+}
+
+.wellcome-card img{
+    max-width: 10vw;
+    max-height: 10vh;
+    overflow: hidden;
+}
+
+.form {
+    background-color: #f7f7f7;
+}
+
+.title-01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: bold;
+    color: #c35f1b;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: bold;
+    background-color: #c35f1b;
+    color: #f7f7f7
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
