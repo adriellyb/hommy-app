@@ -18,6 +18,11 @@ export class AppComponent implements OnInit {
       icon: 'home'
     },
     {
+      title: 'Meu Perfil',
+      url: '/profile',
+      icon: 'person'
+    },
+    {
       title: 'Buscar Repúblicas',
       url: '/search',
       icon: 'search'
@@ -32,6 +37,7 @@ export class AppComponent implements OnInit {
       url: '/republic',
       icon: 'home'
     },
+
   ];
   /*public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];*/
 

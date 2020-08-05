@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="warning">HOMMY</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- IMPRIMINDO A COMPONENTE -->
+<ion-content>
+  <app-profile-card (buttonPressed)="handleEvent($event)" [image]="p_image" [name]="p_name" [type]="p_type" [date_of_birth]="p_date_of_birth" [phone]="p_phone"></app-profile-card>
+</ion-content>

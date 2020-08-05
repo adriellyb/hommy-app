@@ -1,0 +1,26 @@
+h3 {
+    text-align: center;
+    padding: 5px;
+    color: #f7f7f7;
+    background-color: #c35f1b;
+}
+
+img {
+    border-radius: 10em;;
+    border-color: grey;
+    width: 100%;
+}
+
+.type {
+    align-items: center;
+}
+
+@media screen and (min-width:500px){
+
+    img {
+        border-radius: 10em;;
+        border-color: grey;
+        width: 60%;
+    }
+}
+

@@ -1,0 +1,18 @@
+<h3 color="warning">Meu Perfil</h3>
+<ion-grid>
+  <ion-row>
+    <ion-col><img [src]= image /></ion-col>
+    <ion-col>
+      <ion-row><h4>{{ name }}</h4></ion-row>
+      <ion-row class="type"><ion-icon name="home" size="medium"></ion-icon><h5>{{ type }}</h5></ion-row>
+      <ion-row><h5>{{ date_of_birth }}</h5></ion-row>
+      <ion-row><h5>{{ phone }}</h5></ion-row>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-list>
+  <ion-item detail><ion-label>Editar Perfil</ion-label></ion-item>
+  <ion-item detail><ion-label>Repúblicas Salvas</ion-label></ion-item>
+  <ion-item detail><ion-label>Histórico de Repúblicas</ion-label></ion-item>
+  <ion-button (click)="boom()" fill="outline" shape="round" color="warning">Seja um locador!</ion-button>
+</ion-list>
